@@ -1,14 +1,12 @@
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
 public class Main {
     public static void main(String[] args) {
         try {
-            check("java_skypro_go", "", "");
-            "java_skypro_go".split
-        } catch (WrongLongException exception){
-            System.out.println("неверные данные");
+            CODE.check("java_skypro_go", "D_1hWiKjjP_9", "D_1hWiKjjP_9");
+        } catch (WrongLoginException | WrongPasswordException exception){
+            System.out.println("неверные данные: " + exception.getMessage());
         }
-    }
-
-    private static void check(String login, String password, String confirmPassword) throws WrongLongException {
-            throw new WrongLongException();
     }
 }
